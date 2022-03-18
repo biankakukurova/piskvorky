@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(217deg, #615dad, #ffc8da);
-  position: relative;
+  background: linear-gradient(#615dad, #ffc8da);
+  min-height: 100vh;
 }
 .piskvorky {
   background-color: #283e50;
