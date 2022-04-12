@@ -11,9 +11,21 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.piskvorky {
+.piskvorky_pravidla {
   background-color: #283e50;
-  width: 80%;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 130px 0px;
+}
+.piskvorky_home {
+  background-color: #283e50;
+  width: 30%;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -94,10 +106,6 @@ figure {
   text-align: center;
 }
 
-img {
-  width: 100%;
-}
-
 @media (min-width: 650px) {
   .instructions {
     display: flex;
@@ -116,7 +124,71 @@ img {
     padding: 0px 5px 30px 5px;
     width: calc(100% / 2);
   }
-  .piskvorky {
+  .piskvorky_pravidla {
     max-width: 1000px;
   }
+}
+
+.Piskvorky__Hra {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 130px 0px;
+}
+.menu__hra__right {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__hra {
+  display: flex;
+  justify-content: space-between;
+}
+.title__hra {
+  color: white;
+}
+.title__hra img {
+  filter: invert(100%);
+}
+
+.home__button1 {
+  height: 2rem;
+  padding: 0.5rem;
+  background-color: #1fcca4;
+  border: #1fcca4;
+  text-decoration: none;
+}
+.home__button1:hover {
+  background-color: #1cbb96;
+}
+.home__button2 {
+  padding: 0.5rem;
+  height: 2rem;
+  background-color: #0197f6;
+  border: #0197f6;
+  text-decoration: none;
+}
+.home__button2:hover {
+  background-color: #0090e9;
+}
+
+.playground_button {
+  width: 10%;
+  aspect-ratio: 1/1;
+  margin: -2px;
+  border-color: black;
+  background-color: #f4d8ff;
+}
+.playground_button:hover {
+  background-color: #f7e6fd;
+}
+.menu__hra__right a {
+  padding: 5px;
+}
+.title__hra {
+  font-weight: bold;
 }
